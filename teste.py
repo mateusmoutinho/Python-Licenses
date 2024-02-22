@@ -1,9 +1,10 @@
 from python_licenses import Licenses
 
-licenses = Licenses(path_folder="licenses")
+licenses = Licenses(root_secret="siasdiaijaijdsa")
 
-licenses.create_license(license_key="1234567890", expiration_date="2024-12-31")
+v = licenses.create_license(license_key="1234567890", expiration_date="2024-12-31")
 
-license = licenses.check_license("1234567890")
+print(f"store these:\n{v}")
 
-print(license)
+result = licenses.check_license(v)
+print(result)
