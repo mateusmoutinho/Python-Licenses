@@ -2,7 +2,7 @@ import hashlib
 import os
 from datetime import datetime
 
-class License:
+class Licenses:
     def __init__(self, path_folder):
         self.path_folder = path_folder
         if not os.path.exists(self.path_folder):
